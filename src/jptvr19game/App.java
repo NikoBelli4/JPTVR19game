@@ -15,9 +15,9 @@ import java.util.Random;
 public class App {
     public void run() {
         System.out.println("дарова");
-        System.out.println("код загадал число, угадывай давай");
+        System.out.println("код загадал число, угадывай давай\n 50 до 200");
         Random rand = new Random();
-        int rNumber = rand.nextInt(200);
+        int rNumber = rand.nextInt(15-1+1) + 1;
         Scanner scanner = new Scanner(System.in);
         int myNumber = scanner.nextInt();
         if (rNumber == myNumber) {
