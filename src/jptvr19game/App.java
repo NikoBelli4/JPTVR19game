@@ -14,7 +14,6 @@ import java.util.Random;
  */
 public class App {
     public void run() {
-        int a = 5;
         System.out.println("дарова");
         System.out.println("какой диапазон?");
         System.out.println("Min: ");
@@ -22,10 +21,10 @@ public class App {
         int min = scanner.nextInt();
         System.out.println("Max:");
         int max = scanner.nextInt();
+        System.out.println("сколько попыток?");
+        int a = scanner.nextInt();
+        System.out.println("код загадал число, угадывай давай\n от " + min + " до " + max);
         do {
-            if(a == 5);{
-                System.out.println("код загадал число, угадывай давай\n от " + min + " до " + max);
-                    }
             Random rand = new Random();
             int rNumber = rand.nextInt(max-min+1) + min;
             int myNumber = scanner.nextInt();
